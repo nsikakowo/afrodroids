@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Aldo;
+    src: url('./assests/AldotheApache.ttf');
+  }
+ 
+@font-face {
+    font-family: ice;
+    src: url('./assests/Iceberg-Regular.ttf');
+  }
+ 
+@font-face {
+    font-family: quantico;
+    src: url('./assests/Quantico-Regular.ttf');
+  }
+ 
+
+body{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Aldo;
+}
+
+p, h4{
+    margin: 0;
+    padding: 0;
+}
+
+.bg_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.bg_container img{
+    opacity: .7;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 95px 0px;
+    position: relative;
+    z-index: 9;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    align-items: flex-end;
+}
+
+header ul li{
+    list-style: none;
+
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-col{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -60px;
+    position: relative;
+    z-index: 7;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner_image_container{
+    flex: 1.2;
+}
+
+.banner_image_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_col{
+    flex: 0.8;
+}
+
+.date{
+    color: #27FFFF;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: ice;
+
+}
+
+.headline{
+    font-size: 100px;
+    line-height: 87px;
+    text-transform: uppercase;
+    width: 90%;
+    letter-spacing: 2px;
+}
+
+.banner-content{
+    width: 80%;
+    font-family: quantico;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+
+.social-links{
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* width: 150px; */
+    margin: 10px 20px 10px 0;
+    padding: 10px 15px;
+
+}
+
+.social-links  img{
+    margin: 10px 20px 10px 0;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 16px;
+    font-family: quantico;
+    margin-top: 60px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.copyright:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:800px){
+
+    body{
+        overflow: scroll;
+    }
+
+
+    .main-col{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    header{
+        padding: 20px 45px 0px;
+        position: relative;
+        z-index: 9;
+    }
+
+    header ul{
+        width: 30%;
+        align-items: flex-end;
+    }
+
+    .banner_image_container{
+        margin-top: 100px;
+    }
+
+    .banner_image_container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .headline{
+        font-size: 60px;
+        line-height: 57px;
+        width: 60%;
+        letter-spacing: 2px;
+    }
+
+    .slider_col{
+        padding-left: 50px;
+    }
+
+    .banner-content{
+        width: 90%;
+        font-family: quantico;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .copyright{
+        font-size: 16px;
+        font-family: quantico;
+        margin-top: 0px;
+        
+    }
+}
