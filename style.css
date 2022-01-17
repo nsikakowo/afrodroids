@@ -33,8 +33,9 @@ p, h4{
 .bg_container{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -90px;
     z-index: 3;
+    overflow: hidden;
 }
 
 .bg_container img{
@@ -149,8 +150,17 @@ header ul li a{
 @media screen and (max-width:800px){
 
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         overflow-y: scroll;
+    }
+
+    .bg_container{
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: -90px;
+        z-index: 3;
+        overflow: hidden;
     }
 
 
