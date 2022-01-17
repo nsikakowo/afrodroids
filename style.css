@@ -23,6 +23,9 @@ body{
     height: 100vh;
     overflow: hidden;
     font-family: Aldo;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 2480px;
 }
 
 p, h4{
@@ -80,6 +83,8 @@ header ul li a{
 
 .banner_image_container{
     flex: 1.2;
+    position: relative;
+    z-index: 7;
 }
 
 .banner_image_container img{
@@ -87,6 +92,7 @@ header ul li a{
     height: 100%;
     object-fit: cover;
 }
+
 
 .slider_col{
     flex: 0.8;
@@ -114,6 +120,8 @@ header ul li a{
     font-family: quantico;
     font-size: 20px;
     line-height: 29px;
+    position: relative;
+    z-index: 19;
 }
 
 
@@ -125,6 +133,8 @@ header ul li a{
     /* width: 150px; */
     margin: 10px 20px 10px 0;
     padding: 10px 15px 10px 0;
+    position: relative;
+    z-index: 19;
 
 }
 
