@@ -149,23 +149,25 @@ header ul li a{
 @media screen and (max-width:800px){
 
     body{
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
 
     .main-col{
         flex-direction: column;
         margin-top: 0;
+        height: fit-content;
     }
 
     header{
-        padding: 20px 45px 0px;
+        padding: 20px 30px 0px;
         position: relative;
         z-index: 9;
     }
 
     header ul{
-        width: 45%;
+        width: 35%;
         align-items: flex-end;
     }
 
@@ -175,7 +177,7 @@ header ul li a{
 
     .slider_col{
         flex: 1.2;
-        padding-left: 50px;
+        padding-left: 30px;
         margin-top: -60px;
     }
 
@@ -189,10 +191,10 @@ header ul li a{
     }
 
     .headline{
-        font-size: 40px;
-        line-height: 57px;
+        font-size: 65px;
+        line-height: 50px;
         width: 90%;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     
@@ -226,5 +228,6 @@ header ul li a{
         cursor: pointer;
         position: relative;
         z-index: 8;
+        width: 150px;
     }
 }
